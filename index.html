@@ -7,6 +7,23 @@
     <link rel="icon" type="image/png" href="icon1.png">
     <meta name="google-site-verification" content="EFoCDMk8MQrqSQqHMql-gBIe_KFkNxuxumprDax-6OM" />
     <title>黃紫紅</title>
+    <style>
+        /* Responsive container for YouTube embeds */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -36,9 +53,15 @@
             <li>《學子心聲》</li>
             <li>《戰金山》</li>
         </ul>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cW1_HqMaP8o?si=2MRAWJEMTirAohLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/EPc8AxKwssA?si=A2RotLVmHVJ-QDN7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/drFdYx8MDaI?si=LeSlUcFREP5kaUEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cW1_HqMaP8o?si=2MRAWJEMTirAohLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EPc8AxKwssA?si=A2RotLVmHVJ-QDN7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/drFdYx8MDaI?si=LeSlUcFREP5kaUEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
     </section>
     
     <section id="news">
