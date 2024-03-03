@@ -1,0 +1,102 @@
+/* Reset some basic elements */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    background: #555;
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add some spacing and color to the links */
+a {
+    color: #0779e4;
+}
+
+a:hover {
+    color: #01447e;
+}
+
+/* Styling for list items */
+li {
+    margin-bottom: 10px;
+}
+
+/* Additional styling for bio and works sections */
+#bio, #works {
+    background-color: #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Style for the contact section */
+#contact {
+    background-color: #dcdcdc;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
