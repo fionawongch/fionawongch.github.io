@@ -24,15 +24,24 @@
             height: 100%;
         }
     </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"> 
+    </script>
+    <style>
+        .galleria{ width: 700px; height: 400px; background: #000 }
+    </style>
 </head>
 <body>
+
+    <script src="galleria/dist/galleria.min.js"></script>
+
     <header>
         <h1>黃紫紅</h1>
         <nav>
             <ul>
                 <li><a href="#bio">個人簡介</a></li>
-                <li><a href="#works">作品集</a></li>
+                <li><a href="#works">影音集</a></li>
                 <li><a href="#news">媒體報導</a></li>
+                <li><a href="#photos">相片庫</a></li>
                 
             </ul>
         </nav>
@@ -44,23 +53,28 @@
     </section>
     
     <section id="works">
-        <h2>作品集</h2>
-        <ul>
-            <li>《錦繡河山咏新天》</li>
-            <li>《多情粉黛俏紅娘》</li>
-            <li>《祇為虛榮誤此生》</li>
-            <li>《學子心聲》</li>
-            <li>《戰金山》</li>
-        </ul>
+        <h2>影音集</h2>
 
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/cW1_HqMaP8o?si=2MRAWJEMTirAohLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k6NuQMXsLcg?si=pfk2f-6pGLv2Y9wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KBHROk_auSY?si=BFwvXFbdgUElVFVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/S4otZtuSX3M?si=FP6TECuECgxeJrSv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/EPc8AxKwssA?si=A2RotLVmHVJ-QDN7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/drFdYx8MDaI?si=LeSlUcFREP5kaUEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rVlRVv8Npjc?si=LHYd022inhEgYW6d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
     </section>
     
@@ -77,6 +91,21 @@
         </ul>
     </section>
 
+    <section id="photos">
+        <h2>相片庫</h2>
+        <div class="galleria"">
+            <img src="photos/photo1.jpeg">
+            <img src="photos/photo2.jpeg">
+            <img src="photos/photo3.jpeg">
+            <img src="photos/photo4.jpeg"
+        </div>
+        <script>
+            (function() {
+                Galleria.loadTheme('galleria/dist/themes/folio/galleria.folio.min.js');
+                Galleria.run('.galleria');
+            }());
+        </script>
+    </section>
     
     <footer>
         <p>版權所有 © 2024 黃紫紅</p>
