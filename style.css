@@ -13,11 +13,16 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
+    background: #ffffff;
+    background-image: url('background.png');
+    background-size: cover;
+    color: #1B2030;
+    height:30vw;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
 }
 
 header h1 {
