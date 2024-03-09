@@ -29,6 +29,8 @@
     <style>
         .galleria{ width: 100%; height: 700px; background: #ffffff }
     </style>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.4/plyr.css">
+
 
 </head>
 <body>
@@ -59,33 +61,74 @@
             }());
         </script>
     </section>
-    
+
     <section id="works">
         <h2>影音集</h2>
 
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/cW1_HqMaP8o?si=2MRAWJEMTirAohLn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="plyr__video-embed" id="player1">
+                <iframe
+                    src="https://www.youtube.com/embed/cW1_HqMaP8o?si=2MRAWJEMTirAohLn"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay">
+                </iframe>
             </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/k6NuQMXsLcg?si=pfk2f-6pGLv2Y9wk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="plyr__video-embed" id="player2">
+                <iframe
+                    src="https://www.youtube.com/embed/k6NuQMXsLcg?si=pfk2f-6pGLv2Y9wk"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay">
+                </iframe>
             </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/KBHROk_auSY?si=BFwvXFbdgUElVFVl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="plyr__video-embed" id="player3">
+                <iframe
+                    src="https://www.youtube.com/embed/KBHROk_auSY?si=BFwvXFbdgUElVFVl"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay">
+                </iframe>
             </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/S4otZtuSX3M?si=FP6TECuECgxeJrSv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="plyr__video-embed" id="player4">
+                <iframe
+                    src="https://www.youtube.com/embed/S4otZtuSX3M?si=FP6TECuECgxeJrSv"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay">
+                </iframe>
             </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/EPc8AxKwssA?si=A2RotLVmHVJ-QDN7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="plyr__video-embed" id="player5">
+                <iframe
+                    src="https://www.youtube.com/embed/EPc8AxKwssA?si=A2RotLVmHVJ-QDN7"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay">
+                </iframe>
             </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/drFdYx8MDaI?si=LeSlUcFREP5kaUEt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="plyr__video-embed" id="player5">
+                <iframe
+                    src="https://www.youtube.com/embed/drFdYx8MDaI?si=LeSlUcFREP5kaUEt"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay">
+                </iframe>
             </div>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/rVlRVv8Npjc?si=LHYd022inhEgYW6d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="plyr__video-embed" id="player5">
+                <iframe
+                    src="https://www.youtube.com/embed/rVlRVv8Npjc?si=LHYd022inhEgYW6d"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay">
+                </iframe>
             </div>
-    </section>
-    
+
+            
+        </section>
+<script src="https://cdn.plyr.io/3.6.4/plyr.polyfilled.js"></script>
+<script>const players = Array.from(document.querySelectorAll('.plyr__video-embed')).map(p => new Plyr(p));</script>
+
+
+
     <section id="news">
         <h2>媒體報導</h2>
         <ul>
