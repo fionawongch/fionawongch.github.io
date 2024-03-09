@@ -36,20 +36,28 @@
 
     <header>
         <h1>黃紫紅</h1>
-        <nav>
-            <ul>
-                <li><a href="#bio">個人簡介</a></li>
-                <li><a href="#works">影音集</a></li>
-                <li><a href="#news">媒體報導</a></li>
-                <li><a href="#photos">相片庫</a></li>
-                
-            </ul>
-        </nav>
+
     </header>
     
     <section id="bio">
         <h2>個人簡介</h2>
         <p>黃紫紅，以戲曲結緣，香港新晉編劇家，擁兩年創作經驗。曾獲全球微粵曲大賽第四屆及第五屆作品創作賽的優秀作品獎。</p>
+    </section>
+
+    <section id="photos">
+        <h2>相片庫</h2>
+        <div class="galleria"">
+            <img src="photos/photo1.jpeg">
+            <img src="photos/photo2.jpeg">
+            <img src="photos/photo3.jpeg">
+            <img src="photos/photo4.jpeg"
+        </div>
+        <script>
+            (function() {
+                Galleria.loadTheme('galleria/dist/themes/folio/galleria.folio.min.js');
+                Galleria.run('.galleria');
+            }());
+        </script>
     </section>
     
     <section id="works">
@@ -91,21 +99,6 @@
         </ul>
     </section>
 
-    <section id="photos">
-        <h2>相片庫</h2>
-        <div class="galleria"">
-            <img src="photos/photo1.jpeg">
-            <img src="photos/photo2.jpeg">
-            <img src="photos/photo3.jpeg">
-            <img src="photos/photo4.jpeg"
-        </div>
-        <script>
-            (function() {
-                Galleria.loadTheme('galleria/dist/themes/folio/galleria.folio.min.js');
-                Galleria.run('.galleria');
-            }());
-        </script>
-    </section>
     
     <footer>
         <p>版權所有 © 2024 黃紫紅</p>
