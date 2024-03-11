@@ -105,3 +105,7 @@ footer {
     width: 100%;
 }
 
+li {
+  margin: 0px;
+  list-style-type:"- ";
+}
