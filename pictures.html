@@ -51,7 +51,25 @@
             <li><a href="credits.html">特別鳴謝</a></li>
         </ul>
     </nav>
+ 
+    <section id="photos">
+        <h2>相片庫</h2>
+        <div class="galleria">
+            <img src="photos/photo1.jpeg" data-description="第二屆粵劇劇本創作比賽得獎作品-祇為虛榮誤此生">
+            <img src="photos/photo2.jpeg">
+            <img src="photos/photo3.jpeg">
+            <img src="photos/photo4.jpeg">
+        </div>
         
+        <script>
+            (function() {
+                Galleria.loadTheme('galleria/dist/themes/folio/galleria.folio.min.js');
+                Galleria.run('.galleria');
+            }());
+        </script>
+    </section>
+
+    
     <footer>
         <p>版權所有 © 2024 黃紫紅</p>
     </footer>

@@ -29,23 +29,6 @@ header h1 {
     text-align: center;
 }
 
-nav ul {
-    background: #555;
-    text-align: center;
-    padding: 10px;
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 15px 20px;
-    display: inline-block;
-}
 
 section {
     margin: 20px 0;
@@ -70,7 +53,7 @@ a {
 }
 
 a:hover {
-    color: #01447e;
+    color: #e006ef;
 }
 
 /* Styling for list items */
@@ -108,4 +91,33 @@ footer {
 li {
   margin: 0px;
   list-style-type:"- ";
+}
+nav ul {
+    background:  rgba(15, 0, 0, 0.347);
+    padding: 10px;
+    list-style: none;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    margin: 20px 0; /* Add margin for spacing */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align items from left to right */
+}
+
+nav ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Padding for top/bottom and left/right */
+    transition: background-color 0.3s ease;
+    font-size: 18px; /* Adjust font size */
+}
+
+nav ul li a:hover {
+color:#333333;
+font-weight: bold;
 }
