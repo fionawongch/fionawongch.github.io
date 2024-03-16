@@ -33,7 +33,7 @@ header h1 {
 section {
     margin: 20px 0;
     padding: 20px;
-    background: white;
+    background: #eaeaea;
     border-radius: 8px;
 }
 
@@ -61,15 +61,6 @@ li {
     margin-bottom: 10px;
 }
 
-/* Additional styling for bio and works sections */
-#bio, #works, #credits, #news, #photos {
-    background-color: #eaeaea;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
-}
-
-
 /* Footer styling */
 footer {
     background-color: #333333;
@@ -83,7 +74,7 @@ footer {
 
 li {
   margin: 0px;
-  list-style-type:"- ";
+
 }
 nav ul {
     background:  rgba(15, 0, 0, 0.347);
