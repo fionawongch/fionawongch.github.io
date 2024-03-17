@@ -69,11 +69,9 @@ footer {
     width: 100%;
 }
 
-li {
-
-}
 nav ul {
     background:  rgba(15, 0, 0, 0.347);
+    width: 100%;
     padding: 4px;
     list-style: none;
     border-radius: 8px; /* Add border-radius for rounded corners */
