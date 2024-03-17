@@ -82,6 +82,7 @@ nav ul {
 nav ul li {
     margin-bottom: 10px;
     list-style-type: none;
+    display: inline-block;
 }
 
 
