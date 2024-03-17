@@ -1,3 +1,7 @@
+body, p, ul {
+    padding: 1px;
+}
+
 body {
     line-height: 1.6;
     padding: 20px;
@@ -50,6 +54,7 @@ a:hover {
 
 /* Styling for list items */
 li {
+    margin: 3px;
     margin-bottom: 10px;
 }
 
@@ -69,10 +74,10 @@ li {
 }
 nav ul {
     background:  rgba(15, 0, 0, 0.347);
-    padding: 10px;
+    padding: 4px;
     list-style: none;
     border-radius: 8px; /* Add border-radius for rounded corners */
-    margin: 20px 0; /* Add margin for spacing */
+    margin: 10px 0; /* Add margin for spacing */
     display: flex; /* Use flexbox */
     justify-content: space-between; /* Align items from left to right */
 }
