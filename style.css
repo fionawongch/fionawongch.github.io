@@ -1,12 +1,8 @@
-/* Reset some basic elements */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-}
+
 
 /* Basic styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Noto Serif TC', serif;
     line-height: 1.6;
     padding: 20px;
     background-color: #f4f4f4;
@@ -73,7 +69,6 @@ footer {
 }
 
 li {
-  margin: 0px;
 
 }
 nav ul {
