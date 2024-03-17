@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萬紫千紅 戲曲結緣</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" type="image/png" href="icon1.png">
     <meta name="google-site-verification" content="EFoCDMk8MQrqSQqHMql-gBIe_KFkNxuxumprDax-6OM" />
-    <title>萬紫千紅 戲曲結緣</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="galleria/dist/galleria.min.js"></script>
 </head>
 <body>
-
-
     <header>
         <h1>萬紫千紅 戲曲結緣</h1>
-
     </header>
 
     <nav>
@@ -31,32 +28,18 @@
  
     <section id="photos">
         <h3>相片庫</h3>
-        <p>相片繁多，網頁載速較慢，請耐心等候。</p>
 
-        <div class="galleria" id="jsgalleria">
-        </div>
+        <div class="galleria"></div>
         
         <script>
-            // Generate img elements dynamically
-            var galleriaDiv = document.querySelector('.galleria');
-            for (var i = 1; i <= 211; i++) { // change i when I put in more photos
-                var img = document.createElement('img');
-                img.src = 'photos/photo' + i + '.jpeg';
-                galleriaDiv.appendChild(img);
-            }
+            $.getJSON('images.json', function(data) {
+                Galleria.run('.galleria', {
+                    dataSource: data
+                });
+            });
         </script>
-        
-        
-        <script>
-            (function() {
-                Galleria.loadTheme('galleria/dist/themes/classic/galleria.classic.min.js'); //galleria theme
-                Galleria.run('.galleria');
-            }());
-        </script>
-        
     </section>
 
-    
     <footer>
         <p>版權所有 © 2024 黃紫紅</p>
     </footer>
