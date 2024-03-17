@@ -82,7 +82,6 @@ nav ul {
 nav ul li {
     margin-bottom: 10px;
     list-style-type: none;
-    display: inline-block;
 }
 
 
@@ -90,7 +89,7 @@ nav ul li a {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 10px 20px; /* Padding for top/bottom and left/right */
+    padding: 10px 10px; /* Padding for top/bottom and left/right */
     transition: background-color 0.3s ease;
     font-size: 18px; /* Adjust font size */
 }
