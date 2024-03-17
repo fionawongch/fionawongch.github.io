@@ -30,9 +30,9 @@
     </nav>
  
     <section id="photos">
-        <h2>相片庫</h2>
-        <div class="galleria">
+        <h3>相片庫</h3>
 
+        <div class="galleria" id="jsgalleria">
         </div>
         
         <script>
@@ -45,10 +45,42 @@
             }
         </script>
         
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var lazyImages = document.querySelectorAll('#jsgalleria img[data-src]');
+            
+            function lazyLoad() {
+                lazyImages.forEach(function(img) {
+                    if (isElementInViewport(img)) {
+                        img.setAttribute('src', img.getAttribute('data-src'));
+                        img.removeAttribute('data-src');
+                    }
+                });
+            }
+            
+            // Check if element is in viewport
+            function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+            
+            // Trigger lazy load on scroll and resize
+            window.addEventListener('scroll', lazyLoad);
+            window.addEventListener('resize', lazyLoad);
+            
+            // Initial lazy load
+            lazyLoad();
+        });
+        </script>
         
         <script>
             (function() {
-                Galleria.loadTheme('galleria/dist/themes/classic/galleria.classic.min.js');
+                Galleria.loadTheme('galleria/dist/themes/classic/galleria.classic.min.js'); //galleria theme
                 Galleria.run('.galleria');
             }());
         </script>
