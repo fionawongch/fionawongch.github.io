@@ -76,7 +76,7 @@ nav ul {
     border-radius: 8px; /* Add border-radius for rounded corners */
     margin: 10px 0; /* Add margin for spacing */
     display: flex; /* Use flexbox */
-    justify-content: space-around; /* Align items from left to right */
+    justify-content: space-evenly;
 }
 
 nav ul li {
