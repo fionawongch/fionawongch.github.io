@@ -22,7 +22,18 @@ header {
 
 header h1 {
     margin: 0;
+    padding: 20px; /* Adjust as needed */
+    color: #1B2030;
     text-align: center;
+    z-index: 1; /* Ensure the title remains on top */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    header {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('background.png');
+        background-size: cover;
+    }
 }
 
 
