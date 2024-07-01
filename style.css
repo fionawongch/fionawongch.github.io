@@ -116,3 +116,23 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     color: #333; /* Dark gray for text to ensure good readability */
 }
+
+.pdf {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+.pdf,
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    color: green;
+}
