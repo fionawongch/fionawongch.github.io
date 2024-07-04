@@ -9,97 +9,69 @@ body {
 }
 
 header {
-    background: url('background.png');
+    background: url('background.png');    
     background-size: cover;
-    color: #F29D35; /* Warm orange for the text */
-    height: 30vw;
-    padding: 30px;
-    top: 0;
+    height: 15vw;
+    padding: 10px;
+    top: 10;
     left: 0;
     right: 0;
     align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    padding: 20px;
-    color: #5A189A; /* Deep purple for heading */
-    text-align: center;
-    z-index: 1;
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('background.png');
-        background-size: cover;
-    }
-}
-
-section {
-    margin: 20px 0;
-    padding: 20px;
-    background: #FAF9F6; /* A softer neutral tone */
-    border-radius: 8px;
-}
 
 footer {
     text-align: center;
-    padding: 20px;
-    background: #1A535C; /* Dark cyan */
-    color: white;
+    color: black;
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 a {
-    color: #2A9D8F; /* Calm teal */
+    color: #008888; /* Calm teal */
 }
 
 a:hover {
     color: #E76F51; /* Vibrant coral */
 }
 
-li {
-    margin: 3px;
-    margin-bottom: 10px;
-}
 
-footer {
-    background-color: #1A535C;
-    color: white;
+
+
+
+#nav_buttons {
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #3c8dbc;
+    font-weight: bold;
+    font-size: 1.05em;
 }
 
-nav ul {
-    background: rgba(45, 49, 66, 0.8); /* Darker background for better contrast */
-    padding: 20px;
-    list-style: none;
-    border-radius: 8px;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-evenly;
+#nav_buttons ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-nav ul li a {
-    display: block;
-    text-align: center;
+#nav_buttons li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+#nav_buttons a {
+    display: inline-block;
+    margin: 0;
+    padding: 10px 20px;
     color: white;
     text-decoration: none;
-    padding: 10px 10px;
-    transition: background-color 0.3s ease;
-    font-size: 18px;
 }
 
-nav ul li a:hover {
-    color: #FFFFFF;
-    font-weight: bold;
-    transform: translateY(-3px);
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+#nav_buttons a:hover, #nav_buttons a:active {
+    background-color: #008888;
 }
 
 .galleria {
@@ -128,12 +100,6 @@ body {
     margin: 0;
     padding: 0;
 }
-h1,
-h3 {
-    text-align: center;
-}
 
-h1 {
-    color: green;
-}
+
 
