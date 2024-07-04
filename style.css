@@ -19,6 +19,19 @@ header {
     align-items: center;
 }
 
+@media only screen and (max-width: 600px) {
+    header {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('background.png');
+        background-size: cover;
+        height: 15vw;
+        padding: 10px;
+        top: 10;
+        left: 0;
+        right: 0;
+        align-items: center;
+            }
+}
+
 
 footer {
     text-align: center;
@@ -35,9 +48,6 @@ a {
 a:hover {
     color: #E76F51; /* Vibrant coral */
 }
-
-
-
 
 
 #nav_buttons {
