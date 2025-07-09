@@ -127,11 +127,16 @@ section a {
 }
 
 section img {
-    margin-left: 5%;
+    margin-left: 0%;
     margin-right: 0%;
 }
 
 section iframe {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section lite-youtube {
     margin-left: 5%;
     margin-right: 5%;
 }
