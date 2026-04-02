@@ -14,7 +14,7 @@ class LiteYTEmbed extends HTMLElement {
     connectedCallback() {
         this.videoId = this.getAttribute('videoid');
 
-        let playBtnEl = this.querySelector('.lty-playbtn');
+        let playBtnEl = this.querySelector('.lyt-playbtn,.lty-playbtn');
         // A label for the button takes priority over a [playlabel] attribute on the custom-element
         this.playLabel = (playBtnEl && playBtnEl.textContent.trim()) || this.getAttribute('playlabel') || 'Play';
 
@@ -34,7 +34,8 @@ class LiteYTEmbed extends HTMLElement {
         if (!playBtnEl) {
             playBtnEl = document.createElement('button');
             playBtnEl.type = 'button';
-            playBtnEl.classList.add('lty-playbtn');
+            // Include the mispelled 'lty-' in case it's still being used. https://github.com/paulirish/lite-youtube-embed/issues/65
+            playBtnEl.classList.add('lyt-playbtn', 'lty-playbtn');
             this.append(playBtnEl);
         }
         if (!playBtnEl.textContent) {
@@ -46,10 +47,23 @@ class LiteYTEmbed extends HTMLElement {
 
         this.addNoscriptIframe();
 
-        playBtnEl.removeAttribute('href');
+        // for the PE pattern, change anchor's semantics to button
+        if(playBtnEl.nodeName === 'A'){
+            playBtnEl.removeAttribute('href');
+            playBtnEl.setAttribute('tabindex', '0');
+            playBtnEl.setAttribute('role', 'button');
+            // fake button needs keyboard help
+            playBtnEl.addEventListener('keydown', e => {
+                if( e.key === 'Enter' || e.key === ' ' ){
+                    e.preventDefault();
+                    this.activate();
+                }
+            });
+        }
 
         // On hover (or tap), warm up the TCP connections we're (likely) about to use.
         this.addEventListener('pointerover', LiteYTEmbed.warmConnections, {once: true});
+        this.addEventListener('focusin', LiteYTEmbed.warmConnections, {once: true});
 
         // Once the user clicks, add the real iframe and drop our play button
         // TODO: In the future we could be like amp-youtube and silently swap in the iframe during idle time
@@ -187,6 +201,8 @@ class LiteYTEmbed extends HTMLElement {
         iframeEl.title = this.playLabel;
         iframeEl.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
         iframeEl.allowFullscreen = true;
+        // Required by Youtube to fix Error 153
+        iframeEl.referrerPolicy = 'strict-origin-when-cross-origin';
         // AFAIK, the encoding here isn't necessary for XSS, but we'll do it only because this is a URL
         // https://stackoverflow.com/q/64959723/89484
         iframeEl.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(this.videoId)}?${this.getParams().toString()}`;
