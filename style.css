@@ -9,31 +9,16 @@ body {
 }
 
 header {
-    background: url('assets/background2.png');    
+    background: url('assets/background2.png');
     background-size: cover;
+    background-position: center;
     height: 15vw;
+    max-height: 140px;
     padding: 10px;
-    top: 10;
-    left: 0;
-    right: 0;
-    align-items: center;
 }
 
 header h2{
     color: #5C4033;
-}
-
-@media only screen and (max-width: 600px) {
-    header {
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('assets/background2.png');
-        background-size: cover;
-        height: 15vw;
-        padding: 10px;
-        top: 10;
-        left: 0;
-        right: 0;
-        align-items: center;
-            }
 }
 
 
