@@ -40,6 +40,8 @@ Disallow: /
 User-agent: Timpibot
 Disallow: /
 
+User-agent: PanguBot
+Disallow: /
 
 
 
