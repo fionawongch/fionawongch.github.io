@@ -21,7 +21,6 @@ header h2{
     color: #5C4033;
 }
 
-
 footer {
     text-align: center;
     color: black;
@@ -37,7 +36,6 @@ a {
 a:hover {
     color: #E76F51; 
 }
-
 
 #nav_buttons {
     margin: 0;
