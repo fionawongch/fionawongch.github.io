@@ -3,30 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="assets/icon2.png">
-    <meta name="google-site-verification" content="EFoCDMk8MQrqSQqHMql-gBIe_KFkNxuxumprDax-6OM" />
     <title>黃紫紅｜支持網主</title>
-    <script defer src="https://umami.fionawongch.com/script.js" data-website-id="67d5dc4f-e039-4d6d-bd8e-a1cdde192ade"></script>
+    <meta name="google-site-verification" content="EFoCDMk8MQrqSQqHMql-gBIe_KFkNxuxumprDax-6OM" />
+    <link rel="icon" type="image/png" href="assets/icon2.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="site.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FGTQ7MC3Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4FGTQ7MC3Y');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4FGTQ7MC3Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4FGTQ7MC3Y');
-</script>
-
-
-
 <body>
 
-
-    <header>
-        
-    </header>
+    <header></header>
 
     <nav id="nav_buttons">
         <ul>
@@ -36,27 +29,20 @@
             <li><a href="sheet.html">曲譜分享</a></li>
             <li><a href="poster.html">海報集</a></li>
             <li><a href="news.html">傳媒剪影</a></li>
-            <li><a href="credits.html">網頁鳴謝</a></li>
             <li><a href="donation.html">支持網主</a></li>
         </ul>
     </nav>
-    
-    <section>
-        <p style="margin-left: 5%;margin-right: 5%;">
-          承蒙大家厚愛，觀眾每次入場觀看都是對作者最大的支持。如果有意捐贈支持本站營運成本，可以用信用卡或Paypal在Ko-fi捐贈，感激不盡。(Ko-fi預設貨幣為美金，請留意。)<br><br>
-          <a href="https://ko-fi.com/fionawongch">https://ko-fi.com/fionawongch</a><br><br>
-          <iframe id='kofiframe' src='https://ko-fi.com/fionawongch/?hidefeed=true&widget=true&embed=true&preview=true' style='border:none;width:100%;padding:4px;background:#f9f9f9;' height='712' title='fionawongch'></iframe>
 
+    <main>
+        <section>
+            <h1 class="section-title">支持網主</h1>
+            <p>承蒙大家厚愛，觀眾每次入場觀看都是對作者最大的支持。如果有意捐贈支持本站營運成本，可以用信用卡或Paypal在Ko-fi捐贈，感激不盡。(Ko-fi預設貨幣為美金，請留意。)</p>
+            <a class="kofi-btn" href="https://ko-fi.com/fionawongch" target="_blank" rel="noopener">前往 Ko-fi 捐贈：ko-fi.com/fionawongch</a>
+            <iframe id="kofiframe" src="https://ko-fi.com/fionawongch/?hidefeed=true&amp;widget=true&amp;embed=true&amp;preview=true" title="fionawongch" loading="lazy"></iframe>
+        </section>
+    </main>
 
-
-          
-        </p>
-    </section>
-
-    
-    <footer>
-        <p>版權所有 © 2026 黃紫紅</p>
-    </footer>
+    <footer id="site-footer"></footer>
 
 </body>
 </html>

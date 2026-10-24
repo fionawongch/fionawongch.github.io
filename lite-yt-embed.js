@@ -1,3 +1,8 @@
+/*!
+ * Lite YouTube Embed — https://github.com/paulirish/lite-youtube-embed
+ * Copyright Paul Irish. Licensed under the Apache License, Version 2.0
+ * https://www.apache.org/licenses/LICENSE-2.0
+ */
 /**
  * A lightweight youtube embed. Still should feel the same to the user, just MUCH faster to initialize and paint.
  *

@@ -3,34 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lite-yt-embed.css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="assets/icon2.png">
-    <meta name="google-site-verification" content="EFoCDMk8MQrqSQqHMql-gBIe_KFkNxuxumprDax-6OM" />
     <title>黃紫紅｜影音集</title>
-    <script defer src="https://umami.fionawongch.com/script.js" data-website-id="67d5dc4f-e039-4d6d-bd8e-a1cdde192ade"></script>
+    <meta name="google-site-verification" content="EFoCDMk8MQrqSQqHMql-gBIe_KFkNxuxumprDax-6OM" />
+    <link rel="icon" type="image/png" href="assets/icon2.png">
+    <link rel="stylesheet" href="lite-yt-embed.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="site.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FGTQ7MC3Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4FGTQ7MC3Y');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4FGTQ7MC3Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4FGTQ7MC3Y');
-</script>
-
-
-
 <body>
 
-    <header>
-        
-    </header>
+    <header></header>
 
-    
-
-    <nav id='nav_buttons'>
+    <nav id="nav_buttons">
         <ul>
             <li><a href="index.html">最新消息</a></li>
             <li><a href="bio.html">作者簡介</a></li>
@@ -38,136 +30,207 @@
             <li><a href="sheet.html">曲譜分享</a></li>
             <li><a href="poster.html">海報集</a></li>
             <li><a href="news.html">傳媒剪影</a></li>
-            <li><a href="credits.html">網頁鳴謝</a></li>
             <li><a href="donation.html">支持網主</a></li>
         </ul>
     </nav>
 
-    <section>
-        <center>
-        <h4>目錄</h4>
-        <a style="margin-left: 5%;" href="#hengyau">《幸有東君憐飛絮》</a><br>
-        <a style="margin-left: 5%;"href="#waangwan">《還君一點相思淚》</a><br>
-        <a style="margin-left: 5%;" href="#gumsau">《錦繡河山詠新天》</a> <br>
-        <a style="margin-left: 5%;"href="#hoeng">《鄉關》</a><br>
-        <a style="margin-left: 5%;"href="#faa">《花木蘭》</a><br>
-        <a style="margin-left: 5%;"href="#do">《多情粉黛俏紅娘》</a><br>
-        <a style="margin-left: 5%;"href="#ziwai">《祇為虛榮誤此生》</a><br>
-        <a style="margin-left: 5%;"href="#miu">《妙手若椿萱》</a><br>
-        <a style="margin-left: 5%;"href="#zikei">《子期與伯牙》</a><br>
-        <a style="margin-left: 5%;"href="#peipa">《琵琶淚》</a><br>
-        <a style="margin-left: 5%;"href="#yiuleung">《繞樑金曲頌晚天》</a><br>
-        <a style="margin-left: 5%;"href="#dipying">《蝶影聚散倆依依》</a><br>
-        <a style="margin-left: 5%;"href="#soleon">《鎖麟囊之人海奇逢》</a><br>
-        
-        </center>
-    </section>
+    <main>
+        <section>
+            <h1 class="section-title">目錄</h1>
+            <ul class="toc">
+                <li><a href="#wuyi">《烏衣巷口夕陽斜》</a></li>
+                <li><a href="#hengyau">《幸有東君憐飛絮》</a></li>
+                <li><a href="#waangwan">《還君一點相思淚》</a></li>
+                <li><a href="#gumsau">《錦繡河山詠新天》</a></li>
+                <li><a href="#hoeng">《鄉關》</a></li>
+                <li><a href="#faa">《花木蘭》</a></li>
+                <li><a href="#do">《多情粉黛俏紅娘》</a></li>
+                <li><a href="#ziwai">《祇為虛榮誤此生》</a></li>
+                <li><a href="#miu">《妙手若椿萱》</a></li>
+                <li><a href="#zikei">《子期與伯牙》</a></li>
+                <li><a href="#peipa">《琵琶淚》</a></li>
+                <li><a href="#yiuleung">《繞樑金曲頌晚天》</a></li>
+                <li><a href="#dipying">《蝶影聚散倆依依》</a></li>
+                <li><a href="#soleon">《鎖麟囊之人海奇逢》</a></li>
+            </ul>
+        </section>
 
-    <section id='hengyau'>
-    <h4>《幸有東君憐飛絮》</h4>
-    <lite-youtube videoid="PLbZL5XBya4" title="《幸有東君憐飛絮》（新曲首唱）莫華敏 陳彩蓮"></lite-youtube>
+        <!--
+          新增作品：複製一個 <section class="work"> 區塊，改 id、標題、曲譜連結及 videoid，
+          然後在上面「目錄」加一行 <li><a href="#新id">《曲名》</a></li>。
+        -->
+        <section class="work" id="wuyi">
+            <div class="work-head">
+                <h2>《烏衣巷口夕陽斜》</h2>
+                <div class="links">
+                    <a class="chip" href="sheet/烏衣巷口夕陽斜_工尺譜.pdf" target="_blank" rel="noopener">工尺譜</a>
+                </div>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="W45M-tUQntw" title="《烏衣巷口夕陽斜》梁振文 黃岱詩原唱"></lite-youtube>
+                <lite-youtube videoid="4FB9YP0uEDI" title="《烏衣巷口夕陽斜》曲譜版純音樂"></lite-youtube>
+                <lite-youtube videoid="FTJfV7TIRxo" title="《烏衣巷口夕陽斜》卡啦OK版"></lite-youtube>
+                <lite-youtube videoid="B07aawYxNzo" title="《烏衣巷口夕陽斜》平喉伴唱版"></lite-youtube>
+                <lite-youtube videoid="gXlmjFX5r9w" title="《烏衣巷口夕陽斜》子喉伴唱版"></lite-youtube>
+            </div>
+        </section>
 
-    </section>
-    
-    <section id='waangwan'>
-        <h4>《還君一點相思淚》</h4>
-        <a style="margin-left: 5%;" href="sheet/還君一點相思淚(工尺譜）.pdf" target="_blank" rel="noopener">還君一點相思淚工尺譜</a>
-        <lite-youtube videoid="csl8N8yana4" title="《還君一點相思淚》演唱：莫華敏、陳彩蓮(雄藝軒)"></lite-youtube>
-        <lite-youtube videoid="hvmLF-PG8-E" title="《還君一點相思淚》純音樂"></lite-youtube>
-        
-    </section>
+        <section class="work" id="hengyau">
+            <div class="work-head">
+                <h2>《幸有東君憐飛絮》</h2>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="PLbZL5XBya4" title="《幸有東君憐飛絮》（新曲首唱）莫華敏 陳彩蓮"></lite-youtube>
+            </div>
+        </section>
 
-    <section id='gumsau'>
-        <h4>《錦繡河山詠新天》（第一屆微粵曲創作賽銀奬作品）</h4>
-        <a href="sheet/錦繡河山詠新天_1.pdf" style="margin: 5%;" target="_blank" rel="noopener">錦繡河山詠新天簡譜</a><br>
-        <iframe
-        style="margin-left: 5%;"
-        src="https://geo.dailymotion.com/player.html?video=k2q7F9FeO5nzKKDqdN8" 
-        frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" >
-        </iframe>
-        <!--<lite-youtube videoid="EPc8AxKwssA" title="錦繡河山詠新天"></lite-youtube>-->
-        <lite-youtube videoid="6-leQ1lNXkI" title="錦繡河山詠新天"></lite-youtube>
-    </section>
+        <section class="work" id="waangwan">
+            <div class="work-head">
+                <h2>《還君一點相思淚》</h2>
+                <div class="links">
+                    <a class="chip" href="sheet/還君一點相思淚(工尺譜）.pdf" target="_blank" rel="noopener">工尺譜</a>
+                </div>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="csl8N8yana4" title="《還君一點相思淚》演唱：莫華敏、陳彩蓮(雄藝軒)"></lite-youtube>
+                <lite-youtube videoid="hvmLF-PG8-E" title="《還君一點相思淚》純音樂"></lite-youtube>
+            </div>
+        </section>
 
-    <section id='hoeng'>
-        <h4>《鄉關》（第二屆微粵曲創作賽銅奬作品）</h4>
-        <lite-youtube videoid="q7X8b4HBBq4" title="鄉關"></lite-youtube>
-    </section>
+        <section class="work" id="gumsau">
+            <div class="work-head">
+                <h2>《錦繡河山詠新天》<small>（第一屆微粵曲創作賽銀奬作品）</small></h2>
+                <div class="links">
+                    <a class="chip" href="sheet/錦繡河山詠新天_1.pdf" target="_blank" rel="noopener">簡譜</a>
+                </div>
+            </div>
+            <div class="video-grid">
+                <iframe class="video-embed" src="https://geo.dailymotion.com/player.html?video=k2q7F9FeO5nzKKDqdN8" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" loading="lazy"></iframe>
+                <!--<lite-youtube videoid="EPc8AxKwssA" title="錦繡河山詠新天"></lite-youtube>-->
+                <lite-youtube videoid="6-leQ1lNXkI" title="錦繡河山詠新天"></lite-youtube>
+            </div>
+        </section>
 
-    <section id='faa'>
-        <h4>《花木蘭》(第三屆微粵曲創作賽銀奬作品)</h4>
-        <a href="sheet/花木蘭_1.jpg" style="margin-left: 5%;" target="_blank" rel="noopener">花木蘭簡譜頁1</a><br>
-        <a href="sheet/花木蘭_2.jpg" style="margin-left: 5%;" target="_blank" rel="noopener">花木蘭簡譜頁2</a>
-        <lite-youtube videoid="CANz_xk7JC4" title="花木蘭 演出：黃新輝"></lite-youtube>
-        <lite-youtube videoid="fFNkL-oX-SM" title="花木蘭"></lite-youtube>
-    </section>
+        <section class="work" id="hoeng">
+            <div class="work-head">
+                <h2>《鄉關》<small>（第二屆微粵曲創作賽銅奬作品）</small></h2>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="q7X8b4HBBq4" title="鄉關"></lite-youtube>
+            </div>
+        </section>
 
-    <section id='do'>
-        <h4>《多情粉黛俏紅娘》</h4>
-        <a href="sheet/多情粉黛俏紅娘_演出版.pdf" style="margin-left: 5%;" target="_blank" rel="noopener">多情粉黛俏紅娘演出版工尺譜</a><br>
-        <a href="sheet/多情粉黛俏紅娘_原曲版.pdf" style="margin-left: 5%;" target="_blank" rel="noopener">多情粉黛俏紅娘原曲版工尺譜</a>
-        <lite-youtube videoid="w2tOIeBywfs" title="多情粉黛俏紅娘 劇場卡啦OK字幕版 演唱：甘卓敏、余仲欣"></lite-youtube>
-        <lite-youtube videoid="k6NuQMXsLcg" title="多情粉黛俏紅娘 劇場短版 演唱：余仲欣、芯融"></lite-youtube>
-        <lite-youtube videoid="KBHROk_auSY" title="多情粉黛俏紅娘 純音樂卡啦OK字幕版"></lite-youtube>
-        
-        <!--        <lite-youtube videoid="cW1_HqMaP8o" title="多情粉黛俏紅娘 純音樂版"></lite-youtube>     -->
-    </section>
+        <section class="work" id="faa">
+            <div class="work-head">
+                <h2>《花木蘭》<small>（第三屆微粵曲創作賽銀奬作品）</small></h2>
+                <div class="links">
+                    <a class="chip" href="sheet/花木蘭_1.jpg" target="_blank" rel="noopener">簡譜頁1</a>
+                    <a class="chip" href="sheet/花木蘭_2.jpg" target="_blank" rel="noopener">簡譜頁2</a>
+                </div>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="CANz_xk7JC4" title="花木蘭 演出：黃新輝"></lite-youtube>
+                <lite-youtube videoid="fFNkL-oX-SM" title="花木蘭"></lite-youtube>
+            </div>
+        </section>
 
-    <section id='ziwai'>
-        <h4>《祇為虛榮誤此生》(第二屆粵劇劇本創作比賽優勝作品)</h4>
-        <lite-youtube videoid="drFdYx8MDaI" title="祇為虛榮誤此生"></lite-youtube>
-    </section>
+        <section class="work" id="do">
+            <div class="work-head">
+                <h2>《多情粉黛俏紅娘》</h2>
+                <div class="links">
+                    <a class="chip" href="sheet/多情粉黛俏紅娘_演出版.pdf" target="_blank" rel="noopener">演出版工尺譜</a>
+                    <a class="chip" href="sheet/多情粉黛俏紅娘_原曲版.pdf" target="_blank" rel="noopener">原曲版工尺譜</a>
+                </div>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="w2tOIeBywfs" title="多情粉黛俏紅娘 劇場卡啦OK字幕版 演唱：甘卓敏、余仲欣"></lite-youtube>
+                <lite-youtube videoid="k6NuQMXsLcg" title="多情粉黛俏紅娘 劇場短版 演唱：余仲欣、芯融"></lite-youtube>
+                <lite-youtube videoid="KBHROk_auSY" title="多情粉黛俏紅娘 純音樂卡啦OK字幕版"></lite-youtube>
+                <!-- <lite-youtube videoid="cW1_HqMaP8o" title="多情粉黛俏紅娘 純音樂版"></lite-youtube> -->
+            </div>
+        </section>
 
-    <section id="miu">
-        <h4>《妙手若椿萱》（與胡紫雯合寫）</h4>
-        <lite-youtube videoid="rVlRVv8Npjc" title="妙手若椿萱 胡紫雯 (抗疫勵志歌)"></lite-youtube>
-    </section>
+        <section class="work" id="ziwai">
+            <div class="work-head">
+                <h2>《祇為虛榮誤此生》<small>（第二屆粵劇劇本創作比賽優勝作品）</small></h2>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="drFdYx8MDaI" title="祇為虛榮誤此生"></lite-youtube>
+            </div>
+        </section>
 
-    <section id='zikei'>
-        <h4>《子期與伯牙》</h4>
-        <lite-youtube videoid="rRn86_SdmPk" title="子期與伯牙虛擬篇 揚鳴粵劇團 新編首演"></lite-youtube>
-    </section>
-    
-    <section id='peipa'>
-        <h4>《琵琶淚》</h4>
-        <a href="sheet/琵琶淚_工尺譜.pdf" style="margin-left: 5%;" target="_blank" rel="noopener">琵琶淚工尺譜</a><br>
-        <a style="margin-left: 5%;" target="_blank" rel="noopener" href="sheet/琵琶淚_簡譜.pdf">琵琶淚簡譜</a>
-        <lite-youtube videoid="kqyW6YnPOOU" title="琵琶淚 梁振文 黃岱詩 沙田大會堂"></lite-youtube>
-        <lite-youtube videoid="sbgB694y-pg" title="琵琶淚 梁振文 余仲欣「欣韻傳承」余仲欣演唱會"></lite-youtube>
-    </section>
-    
-    <section id='yiuleung'>
-        <h4>《繞樑金曲頌晚天》</h4>
-        <lite-youtube videoid="P2HaDm2Qpyw" title="繞樑金曲頌晚天「欣韻傳承」余仲欣演唱會"></lite-youtube>
-    </section>
-    
-    <section id='dipying'>
-        <h4>《蝶影聚散倆依依》</h4>
-        <a href="sheet/蝶影聚散倆依依_工尺.pdf" style="margin-left: 5%;" target="_blank" rel="noopener">蝶影聚散倆依依工尺譜</a><br>
-        <a href="sheet/蝶影聚散倆依依_簡譜.pdf" style="margin-left: 5%;" target="_blank" rel="noopener">蝶影聚散倆依依簡譜</a>
-        
-        <lite-youtube videoid="PZmR_-lFcxI" title="《蝶影聚散倆依依》卡啦OK字幕版"></lite-youtube>
-        <lite-youtube videoid="tv9Ze6u1DmY" title="《蝶影聚散倆依依》羅妍 芯融版"></lite-youtube>
-        <lite-youtube videoid="0eyJK3w0IJo" title="《蝶影聚散倆依依》曲譜版"></lite-youtube>
-    </section>    
+        <section class="work" id="miu">
+            <div class="work-head">
+                <h2>《妙手若椿萱》<small>（與胡紫雯合寫）</small></h2>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="rVlRVv8Npjc" title="妙手若椿萱 胡紫雯 (抗疫勵志歌)"></lite-youtube>
+            </div>
+        </section>
 
-    <section id='soleon'>
-        <h4>《鎖麟囊之人海奇逢》</h4>
-        <a href="sheet/人海奇逢.pdf" style="margin-left: 5%;" target="_blank" rel="noopener">鎖麟囊之人海奇逢工尺譜</a>
+        <section class="work" id="zikei">
+            <div class="work-head">
+                <h2>《子期與伯牙》</h2>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="rRn86_SdmPk" title="子期與伯牙虛擬篇 揚鳴粵劇團 新編首演"></lite-youtube>
+            </div>
+        </section>
 
-        <lite-youtube videoid="0KPikWUfkdQ" title="《鎖麟囊之人海奇逢》演唱：黎燕玲、程汶"></lite-youtube>
-        <lite-youtube videoid="dF6JDJXUjz0" title="《鎖麟囊之人海奇逢》純音樂"></lite-youtube>
-    </section>
-    
-    <section><center><a href="#nav_buttons">回頁頂</a></center></section>
+        <section class="work" id="peipa">
+            <div class="work-head">
+                <h2>《琵琶淚》</h2>
+                <div class="links">
+                    <a class="chip" href="sheet/琵琶淚_工尺譜.pdf" target="_blank" rel="noopener">工尺譜</a>
+                    <a class="chip" href="sheet/琵琶淚_簡譜.pdf" target="_blank" rel="noopener">簡譜</a>
+                </div>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="kqyW6YnPOOU" title="琵琶淚 梁振文 黃岱詩 沙田大會堂"></lite-youtube>
+                <lite-youtube videoid="sbgB694y-pg" title="琵琶淚 梁振文 余仲欣「欣韻傳承」余仲欣演唱會"></lite-youtube>
+            </div>
+        </section>
+
+        <section class="work" id="yiuleung">
+            <div class="work-head">
+                <h2>《繞樑金曲頌晚天》</h2>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="P2HaDm2Qpyw" title="繞樑金曲頌晚天「欣韻傳承」余仲欣演唱會"></lite-youtube>
+            </div>
+        </section>
+
+        <section class="work" id="dipying">
+            <div class="work-head">
+                <h2>《蝶影聚散倆依依》</h2>
+                <div class="links">
+                    <a class="chip" href="sheet/蝶影聚散倆依依_工尺.pdf" target="_blank" rel="noopener">工尺譜</a>
+                    <a class="chip" href="sheet/蝶影聚散倆依依_簡譜.pdf" target="_blank" rel="noopener">簡譜</a>
+                </div>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="PZmR_-lFcxI" title="《蝶影聚散倆依依》卡啦OK字幕版"></lite-youtube>
+                <lite-youtube videoid="tv9Ze6u1DmY" title="《蝶影聚散倆依依》羅妍 芯融版"></lite-youtube>
+                <lite-youtube videoid="0eyJK3w0IJo" title="《蝶影聚散倆依依》曲譜版"></lite-youtube>
+            </div>
+        </section>
+
+        <section class="work" id="soleon">
+            <div class="work-head">
+                <h2>《鎖麟囊之人海奇逢》</h2>
+                <div class="links">
+                    <a class="chip" href="sheet/人海奇逢.pdf" target="_blank" rel="noopener">工尺譜</a>
+                </div>
+            </div>
+            <div class="video-grid">
+                <lite-youtube videoid="0KPikWUfkdQ" title="《鎖麟囊之人海奇逢》演唱：黎燕玲、程汶"></lite-youtube>
+                <lite-youtube videoid="dF6JDJXUjz0" title="《鎖麟囊之人海奇逢》純音樂"></lite-youtube>
+            </div>
+        </section>
+    </main>
+
+    <footer id="site-footer"></footer>
 
     <script src="lite-yt-embed.js"></script>
-
-
-    
-    <footer>
-        <p>版權所有 © 2026 黃紫紅</p>
-    </footer>
-
 </body>
 </html>

@@ -3,30 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="assets/icon2.png">
-    <meta name="google-site-verification" content="EFoCDMk8MQrqSQqHMql-gBIe_KFkNxuxumprDax-6OM" />
     <title>黃紫紅｜網頁鳴謝</title>
-    <script defer src="https://umami.fionawongch.com/script.js" data-website-id="67d5dc4f-e039-4d6d-bd8e-a1cdde192ade"></script>
+    <meta name="google-site-verification" content="EFoCDMk8MQrqSQqHMql-gBIe_KFkNxuxumprDax-6OM" />
+    <link rel="icon" type="image/png" href="assets/icon2.png">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="site.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4FGTQ7MC3Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4FGTQ7MC3Y');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4FGTQ7MC3Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4FGTQ7MC3Y');
-</script>
-
 <body>
 
+    <header></header>
 
-    <header>
-        
-    </header>
-
-    <nav id='nav_buttons'>
+    <nav id="nav_buttons">
         <ul>
             <li><a href="index.html">最新消息</a></li>
             <li><a href="bio.html">作者簡介</a></li>
@@ -34,28 +29,23 @@
             <li><a href="sheet.html">曲譜分享</a></li>
             <li><a href="poster.html">海報集</a></li>
             <li><a href="news.html">傳媒剪影</a></li>
-            <li><a href="credits.html">網頁鳴謝</a></li>
             <li><a href="donation.html">支持網主</a></li>
         </ul>
     </nav>
 
-	
-	<section id="credits">
-		<h3 style="margin-left: 5%">網頁鳴謝</h3>
-		<p style="margin-left: 5%">感謝《戲曲之旅》及《粵劇曲藝月刊》等友好雜誌刊登文章及圖片，本頁只作轉載，一切版權全屬原作者所有。如本站任何內容涉及版權問題，請以電郵 5goswriet@mozmail.com 通知系統管理員。</p>
-		<p style="margin-left: 5%">影音集採用以下開源軟件 (open source software) 播放 YouTube 影片，特此鳴謝開發人:</p>
-		<ul style="margin-left: 5%">
-		<li><a href="https://github.com/paulirish/lite-youtube-embed/tree/master">Lite YouTube Embed</a>, Paul Irish</li>
-        </ul>
-        <p style="margin-left: 5%">本站使用 Google Analytics 收集匿名瀏覽數據，例如頁面瀏覽次數、訪客所在地區及使用裝置。Google Analytics 會使用 cookies 收集用家數據，不過我們不會使用 cookies 作第三方營銷或推廣。與歐盟不同，香港及中國大陸目前並無相關法例指明使用 cookies 須事先取得同意，但為保障閣下私隱，你可以定期於瀏覽器刪除 cookies，或使用無痕模式瀏覽。</p>
-		
-        
-	</section>
+    <main>
+        <section class="policy">
+            <h1 class="section-title">網頁鳴謝</h1>
+            <p>感謝《戲曲之旅》及《粵劇曲藝月刊》等友好雜誌刊登文章及圖片，本頁只作轉載，一切版權全屬原作者所有。如本站任何內容涉及版權問題，請以電郵 5goswriet@mozmail.com 通知系統管理員。</p>
+            <h2>開源軟件</h2>
+            <p>影音集採用以下開源軟件 (open source software) 播放 YouTube 影片，特此鳴謝開發人：</p>
+            <ul>
+                <li><a href="https://github.com/paulirish/lite-youtube-embed">Lite YouTube Embed</a>，Paul Irish（以 <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> 授權）</li>
+            </ul>
+        </section>
+    </main>
 
-    
-    <footer>
-        <p>版權所有 © 2026 黃紫紅</p>
-    </footer>
+    <footer id="site-footer"></footer>
 
 </body>
 </html>
