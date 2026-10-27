@@ -68,7 +68,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ---------- 頁首橫幅 ---------- */
 header {
-    background: url('assets/background3.png') center 62% / cover no-repeat;
+    background: url('assets/banner-7.jpg') center / cover no-repeat;
     height: clamp(72px, 12vw, 150px);
 }
 
